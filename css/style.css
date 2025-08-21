@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* -------------------- */
+/* 1. Reset CSS */
+/* -------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------------------- */
+/* 2. Variáveis */
+/* -------------------- */
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+
+  --font-family-inter: "Inter", sans-serif;
+}
+
+/* -------------------- */
+/* 3. Tipografia */
+/* -------------------- */
+
+body {
+  font-family: var(--font-family-inter);
+  font-size: 14px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
