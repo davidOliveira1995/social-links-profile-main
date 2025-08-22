@@ -4,7 +4,8 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### 🖼️ Screenshot
 
-🖥️ Desktop preview 
+🖥️ Desktop preview
+
 ![](assets/images/screen-desktop.png)
 
 ---
