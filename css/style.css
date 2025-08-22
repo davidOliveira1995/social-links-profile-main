@@ -1,8 +1,6 @@
-@charset "utf-8";
-
-/* -------------------- */
+/* ---------------------------------------------- */
 /* 1. Reset CSS */
-/* -------------------- */
+/* ---------------------------------------------- */
 
 * {
   margin: 0;
@@ -10,9 +8,9 @@
   box-sizing: border-box;
 }
 
-/* -------------------- */
+/* ---------------------------------------------- */
 /* 2. Variáveis */
-/* -------------------- */
+/* ---------------------------------------------- */
 
 :root {
   --Green: hsl(75, 94%, 57%);
@@ -24,19 +22,122 @@
   --font-family-inter: "Inter", sans-serif;
 }
 
-/* -------------------- */
+/* ---------------------------------------------- */
 /* 3. Tipografia */
-/* -------------------- */
+/* ---------------------------------------------- */
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
   font-family: var(--font-family-inter);
   font-size: 14px;
+  background-color: var(--Grey-900);
+}
+
+/* ---------------------------------------------- */
+/* 4. Layout (header, nav, main, footer) */
+/* ---------------------------------------------- */
+main {
+  background-color: var(--Grey-800);
+  border-radius: 10px;
+}
+
+/* ---------------------------------------------- */
+/* 5. Componentes (cards, buttons, forms) */
+/* ---------------------------------------------- */
+
+.card {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.card-profile-img {
+  margin-bottom: 20px;
+  border-radius: 50px;
+}
+
+.card-title {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.card-paragraph {
+  margin-bottom: 15px;
+  font-weight: 200;
+}
+
+.card-title,
+.card-paragraph {
+  color: var(--White);
+}
+
+.paragraph-color {
+  color: var(--Green);
+  font-weight: 500;
+}
+
+.card-list li {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  background-color: var(--Grey-700);
+  display: inline-block;
+  border-radius: 10px;
+  align-content: center;
+  text-align: center;
+}
+
+.card-list a {
+  color: var(--White);
+  text-decoration: none;
+}
+
+.card-list li:hover {
+  background-color: var(--Green);
+  transition: background-color 0.5s;
+}
+
+.card-list li:hover a {
+  color: var(--Grey-900);
+}
+
+
+/* ---------------------------------------------- */
+/* 7. Media queries/responsividade */
+/* ---------------------------------------------- */
+@media (max-width: 375px) {
+  main {
+    margin: 20px;
+  }
+  .card {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .attribution {
+    display: none;
+  }
 }
 
 .attribution {
-  font-size: 11px;
+  margin: 30px;
+  color: var(--White);
+  font-size: 1.2rem;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Green);
+  font-weight: 100;
+}
+
+.attribution a:hover {
+  font-weight: 900;
+  transition-duration: 0.5s;
 }
